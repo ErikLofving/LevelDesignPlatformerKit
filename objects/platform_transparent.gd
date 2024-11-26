@@ -1,12 +1,30 @@
 extends Node3D
 
-@onready var playerCharacter = get_tree().get_first_node_in_group("PlayerGroup")
+@onready var playerCharacter : Node3D = get_tree().get_first_node_in_group("PlayerGroup")
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
+@export var opacity : float = 0.5
+
+@onready var platform_2 = $platform2
+
+@onready var animation_player = $AnimationPlayer
+
+var transparencyChange : float
+
+func _on_area_3d_body_entered(body):
+	
+	if body == playerCharacter:
+		
+		animation_player.play("Transparent")
+		print("player has entered the area!")
+		
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _on_area_3d_body_exited(body):
+	
+	if body == playerCharacter:
+		
+		animation_player.play("Opacity")
+		print("player has entered the area!")
+	
+	pass # Replace with function body.

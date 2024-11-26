@@ -76,7 +76,7 @@ environment = ExtResource("1_q5pn2")
 camera_attributes = SubResource("CameraAttributesPractical_uae8k")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("1_dts7j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.220126, 1, -0.338058)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.220126, 1, 1.66194)
 view = NodePath("../View")
 
 [node name="World" type="Node3D" parent="."]
@@ -115,21 +115,6 @@ transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, -21.5, 0, -16)
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -15.9387, 0.5, -0.148705)
 
 [node name="player_kill_volume" parent="World" instance=ExtResource("4_wv4ai")]
-
-[node name="platform" parent="World" instance=ExtResource("6_dilne")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, -8.011)
-
-[node name="platform3" parent="World" instance=ExtResource("6_dilne")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -31.4203, 3, -33.8407)
-
-[node name="platform4" parent="World" instance=ExtResource("6_dilne")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -31.4203, 3, -35.8407)
-
-[node name="platform5" parent="World" instance=ExtResource("6_dilne")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.4203, 3, -35.8407)
-
-[node name="platform6" parent="World" instance=ExtResource("6_dilne")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.4203, 3, -37.8407)
 
 [node name="platform7" parent="World" instance=ExtResource("6_dilne")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.4203, 3, -41.8407)
@@ -186,6 +171,24 @@ ping_pong = true
 
 [node name="platform13" parent="World" instance=ExtResource("9_eg88d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -5)
+
+[node name="platform15" parent="World" instance=ExtResource("9_eg88d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, -8)
+
+[node name="platform16" parent="World" instance=ExtResource("9_eg88d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 3, -34)
+
+[node name="platform17" parent="World" instance=ExtResource("9_eg88d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 3, -36)
+
+[node name="platform18" parent="World" instance=ExtResource("9_eg88d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.5, 3, -36)
+
+[node name="platform19" parent="World" instance=ExtResource("9_eg88d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.5, 3, -38)
+
+[node name="platform14" parent="World" instance=ExtResource("9_eg88d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0)
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
 process_mode = 3
