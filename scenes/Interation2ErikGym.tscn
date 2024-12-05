@@ -338,14 +338,8 @@ label_settings = SubResource("LabelSettings_v6r7m")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="platform24" parent="." instance=ExtResource("13_ttk4g")]
-transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, -18.5, 0.5, 22.5)
-
-[node name="platform25" parent="." instance=ExtResource("13_ttk4g")]
-transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 5, 0, -2.5, 0, -1.09278e-07, -13.5, 0.5, 22.5)
-
 [node name="platform15" parent="." instance=ExtResource("13_ttk4g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 33)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 32.5)
 
 [node name="platform16" parent="." instance=ExtResource("13_ttk4g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, -1, 27)
@@ -404,19 +398,43 @@ transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -13, 0.25, 34)
 metadata/_edit_group_ = true
 
 [node name="Wall16" parent="." instance=ExtResource("21_pj861")]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -25, 3.25, 30)
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -25, 4.5, 30)
 metadata/_edit_group_ = true
 
 [node name="Wall17" parent="." instance=ExtResource("21_pj861")]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -21, 3.25, 30)
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -21, 4.5, 30)
 metadata/_edit_group_ = true
 
 [node name="Wall18" parent="." instance=ExtResource("21_pj861")]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -25, 3.25, 34)
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -25, 4.5, 34)
 metadata/_edit_group_ = true
 
 [node name="Wall19" parent="." instance=ExtResource("21_pj861")]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -21, 3.25, 34)
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -21, 4.5, 34)
+metadata/_edit_group_ = true
+
+[node name="Wall25" parent="." instance=ExtResource("21_pj861")]
+transform = Transform3D(-4.37114e-08, -0.5, 0, 1, -2.18557e-08, 0, 0, 0, 1, -19, 2.5, 34)
+metadata/_edit_group_ = true
+
+[node name="Wall29" parent="." instance=ExtResource("21_pj861")]
+transform = Transform3D(1.91069e-15, 2.18557e-08, -1, 1, -2.18557e-08, 0, -4.37114e-08, -0.5, -4.37114e-08, -21, 2.5, 36)
+metadata/_edit_group_ = true
+
+[node name="Wall30" parent="." instance=ExtResource("21_pj861")]
+transform = Transform3D(1.91069e-15, 2.18557e-08, -1, 1, -2.18557e-08, 0, -4.37114e-08, -0.5, -4.37114e-08, -25, 2.5, 36)
+metadata/_edit_group_ = true
+
+[node name="Wall26" parent="." instance=ExtResource("21_pj861")]
+transform = Transform3D(-4.37114e-08, -0.5, 0, 1, -2.18557e-08, 0, 0, 0, 1, -19, 2.5, 30)
+metadata/_edit_group_ = true
+
+[node name="Wall27" parent="." instance=ExtResource("21_pj861")]
+transform = Transform3D(1.91069e-15, 2.18557e-08, 1, 1, -2.18557e-08, 0, 4.37114e-08, 0.5, -4.37114e-08, -21, 2.5, 28)
+metadata/_edit_group_ = true
+
+[node name="Wall28" parent="." instance=ExtResource("21_pj861")]
+transform = Transform3D(1.91069e-15, 2.18557e-08, 1, 1, -2.18557e-08, 0, 4.37114e-08, 0.5, -4.37114e-08, -25, 2.5, 28)
 metadata/_edit_group_ = true
 
 [node name="Wall12" parent="." instance=ExtResource("21_pj861")]
@@ -439,10 +457,19 @@ metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0.25, 7)
 
 [node name="Wall20" parent="." instance=ExtResource("22_8t6qy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 1, 24)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17, 1.25, 22)
+
+[node name="Wall22" parent="." instance=ExtResource("22_8t6qy")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13, 1.25, 22)
+
+[node name="Wall23" parent="." instance=ExtResource("22_8t6qy")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13, 3.25, 22)
 
 [node name="Wall21" parent="." instance=ExtResource("22_8t6qy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 32.5)
+
+[node name="Wall24" parent="." instance=ExtResource("22_8t6qy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, 35)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
