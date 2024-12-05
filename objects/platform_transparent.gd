@@ -10,6 +10,10 @@ extends Node3D
 
 var transparencyChange : float
 
+func _ready():
+	var animation = animation_player.get_animation("RESET")
+	
+
 func _on_area_3d_body_entered(body):
 	
 	if body == playerCharacter:

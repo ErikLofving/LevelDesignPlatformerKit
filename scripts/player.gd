@@ -10,6 +10,9 @@ signal reached_goal
 @export var movement_speed = 250
 @export var jump_strength = 7
 
+@export_subgroup("Player Light")
+@export var player_lit_time = 10
+
 var movement_velocity: Vector3
 var rotation_direction: float
 var gravity = 0
