@@ -1,6 +1,8 @@
-[gd_scene load_steps=7 format=4 uid="uid://c8prumissi0sg"]
+[gd_scene load_steps=8 format=4 uid="uid://c8prumissi0sg"]
 
 [ext_resource type="Texture2D" uid="uid://0odt7cvj574e" path="res://models/core_models/Textures/colormap.png" id="1_iwq6k"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7kll8"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dwiet"]
 
@@ -51,30 +53,31 @@ transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, -0.25, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1.9, 0, 0, 0, 1, 0, 0, 0, 1.9, 0, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_7kll8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_dwiet")
 
-[node name="cube2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.5, 0.5)
+[node name="cube2" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.526316, 0, 0, 0, 1, 0, 0, 0, 0.526316, 0.263158, -0.5, 0.263158)
 mesh = SubResource("ArrayMesh_2odqq")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ubai4")
 
-[node name="cube3" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.5, -0.5)
+[node name="cube3" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.526316, 0, 0, 0, 1, 0, 0, 0, 0.526316, 0.263158, -0.5, -0.263158)
 mesh = SubResource("ArrayMesh_2odqq")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ubai4")
 
-[node name="cube4" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.5, -0.5)
+[node name="cube4" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.526316, 0, 0, 0, 1, 0, 0, 0, 0.526316, -0.263158, -0.5, -0.263158)
 mesh = SubResource("ArrayMesh_2odqq")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ubai4")
 
-[node name="cube5" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.5, 0.5)
+[node name="cube5" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.526316, 0, 0, 0, 1, 0, 0, 0, 0.526316, -0.263158, -0.5, 0.263158)
 mesh = SubResource("ArrayMesh_2odqq")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ubai4")

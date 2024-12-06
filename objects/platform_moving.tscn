@@ -8,6 +8,7 @@ albedo_texture = ExtResource("2_n2tog")
 uv1_offset = Vector3(2.97, 0, 0)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8y38s"]
+resource_name = "MovingPlatformMaterial"
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cypsh"]
 size = Vector3(2, 0.5, 2)

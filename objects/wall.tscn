@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbr3dh46cbskt"]
+[gd_scene load_steps=5 format=3 uid="uid://dty0da3nqd4wp"]
 
 [ext_resource type="PackedScene" uid="uid://2briludp3y6q" path="res://models/prototyping/models/wall.glb" id="1_jc8pj"]
 [ext_resource type="Texture2D" uid="uid://72ldk18ropuj" path="res://models/props/Textures/colormap.png" id="2_fs418"]
