@@ -208,23 +208,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.5, 3, -42)
 [node name="platform27" parent="World" instance=ExtResource("9_eg88d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3, -49.5)
 
+[node name="platform6" parent="World" instance=ExtResource("6_dilne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.5, 3, -49.511)
+
+[node name="platform7" parent="World" instance=ExtResource("6_dilne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5, 8, -58.011)
+
+[node name="platform8" parent="World" instance=ExtResource("6_dilne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 8, -56.511)
+
+[node name="platform9" parent="World" instance=ExtResource("6_dilne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 8, -56.511)
+
+[node name="platform10" parent="World" instance=ExtResource("6_dilne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 8, -60.511)
+
 [node name="platform32" parent="World" instance=ExtResource("9_eg88d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.5, 3, -49.5)
-
-[node name="platform3" parent="World/platform32" instance=ExtResource("6_dilne")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -0.0110016)
-
-[node name="platform4" parent="World/platform32" instance=ExtResource("6_dilne")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 5, -8.511)
-
-[node name="platform5" parent="World/platform32" instance=ExtResource("6_dilne")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 5, -7.011)
-
-[node name="platform7" parent="World/platform32" instance=ExtResource("6_dilne")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 5, -7.011)
-
-[node name="platform6" parent="World/platform32" instance=ExtResource("6_dilne")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.5, 5, -11.011)
 
 [node name="platform28" parent="World" instance=ExtResource("9_eg88d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5, 3, -55)
