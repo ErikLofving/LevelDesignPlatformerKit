@@ -1,0 +1,94 @@
+[gd_scene load_steps=10 format=3 uid="uid://diamr0cvrghvd"]
+
+[ext_resource type="PackedScene" uid="uid://biyd6x403gvny" path="res://models/core_models/platform-falling.glb" id="1_y2hv7"]
+[ext_resource type="Script" path="res://objects/platform_moving_transparent.gd" id="2_lujb2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4l7yv"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8y38s"]
+resource_name = "MovingPlatformMaterial"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cypsh"]
+size = Vector3(2, 0.5, 2)
+
+[sub_resource type="Animation" id="Animation_eb0hw"]
+resource_name = "Transparent"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("platform-falling2:transparency")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.5]
+}
+
+[sub_resource type="Animation" id="Animation_77fei"]
+resource_name = "Opacity"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("platform-falling2:transparency")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.5, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_y3cyp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("platform-falling2:transparency")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xb1qn"]
+_data = {
+"Opacity": SubResource("Animation_77fei"),
+"RESET": SubResource("Animation_y3cyp"),
+"Transparent": SubResource("Animation_eb0hw")
+}
+
+[node name="platform-moving" instance=ExtResource("1_y2hv7")]
+script = ExtResource("2_lujb2")
+
+[node name="platform-falling2" parent="." index="0"]
+transparency = 1.0
+cast_shadow = 0
+
+[node name="Area3D" type="Area3D" parent="platform-falling2" index="0"]
+transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="platform-falling2/Area3D" index="0"]
+transform = Transform3D(2.5, 0, 0, 0, 4, 0, 0, 0, 2.5, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_4l7yv")
+
+[node name="AnimatableBody3D" type="AnimatableBody3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+physics_material_override = SubResource("PhysicsMaterial_8y38s")
+sync_to_physics = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D" index="0"]
+shape = SubResource("BoxShape3D_cypsh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_xb1qn")
+}
+
+[connection signal="body_entered" from="platform-falling2/Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="platform-falling2/Area3D" to="." method="_on_area_3d_body_exited"]

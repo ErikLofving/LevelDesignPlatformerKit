@@ -1,14 +1,9 @@
-[gd_scene load_steps=13 format=4 uid="uid://dvh3xap4ua3xx"]
+[gd_scene load_steps=4 format=4 uid="uid://cwjt6gwcrxwol"]
 
-[ext_resource type="Texture2D" uid="uid://0odt7cvj574e" path="res://models/core_models/Textures/colormap.png" id="1_kg4lt"]
-[ext_resource type="Script" path="res://objects/wall_green_transparent.gd" id="1_rqyyi"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_dwiet"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v42nd"]
-resource_name = "colormap"
-cull_mode = 2
-albedo_texture = ExtResource("1_kg4lt")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8nofx"]
+emission_enabled = true
+emission = Color(0.890388, 0.66257, 0, 1)
+emission_energy_multiplier = 7.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_kckt4"]
 _surfaces = [{
@@ -25,7 +20,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_2odqq"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_4l3vt"]
 resource_name = "cube_cube"
 _surfaces = [{
 "aabb": AABB(-0.5, 0, -0.5, 1, 1, 1),
@@ -34,7 +29,7 @@ _surfaces = [{
 "index_count": 612,
 "index_data": PackedByteArray("AgAAAAEABQADAAQACAAGAAcACwAJAAoADgAMAA0AEQAPABAAFAASABMAFwAVABYAGgAYABkAHQAbABwAIAAeAB8AIwAhACIAJgAkACUAKQAnACgALAAqACsALwAtAC4AMgAwADEANQAzADQAOAA2ADcAOwA5ADoAPgA8AD0AQQA/AEAARABCAEMARwBFAEYASgBIAEkASQBLAEoATgBMAE0ATQBPAE4AUgBQAFEAUQBTAFIAVgBUAFUAVQBXAFYAWgBYAFkAWQBbAFoAXgBcAF0AXQBfAF4AYgBgAGEAYQBjAGIAZgBkAGUAZQBnAGYAagBoAGkAaQBrAGoAbgBsAG0AbQBvAG4AcgBwAHEAcQBzAHIAdgB0AHUAdQB3AHYAegB4AHkAeQB7AHoAfgB8AH0AfQB/AH4AggCAAIEAgQCDAIIAhgCEAIUAhQCHAIYAigCIAIkAiQCLAIoAjgCMAI0AjQCPAI4AkgCQAJEAkQCTAJIAlgCUAJUAlQCXAJYAmgCYAJkAmQCbAJoAngCcAJ0AnQCfAJ4AogCgAKEAoQCjAKIApgCkAKUApQCnAKYAqgCoAKkAqQCrAKoArgCsAK0ArQCvAK4AsgCwALEAsQCzALIAtgC0ALUAtQC3ALYAugC4ALkAuQC7ALoAvgC8AL0AvQC/AL4AwgDAAMEAwQDDAMIAxgDEAMUAxQDHAMYAygDIAMkAyQDLAMoAzgDMAM0AzQDPAM4A0gDQANEA0QDTANIA1gDUANUA1QDXANYA2gDYANkA2QDbANoA3gDcAN0A3QDfAN4A4gDgAOEA4QDjAOIA5gDkAOUA5QDnAOYA6gDoAOkA6QDrAOoA7gDsAO0A7QDvAO4A8gDwAPEA8QDzAPIA9gD0APUA9QD3APYA+gD4APkA+QD7APoA/gD8AP0A/QD/AP4AAgEAAQEBAQEDAQIBBgEEAQUBBQEHAQYBCgEIAQkBCQELAQoBDgEMAQ0BDQEPAQ4BEgEQAREBEQETARIBFgEUARUBFQEXARYBGgEYARkBGQEbARoBHgEcAR0BHQEfAR4BIgEgASEBIQEjASIBJgEkASUBJQEnASYBKgEoASkBKQErASoBLgEsAS0BLQEvAS4BMgEwATEBMQEzATIBNgE0ATUBNQE3ATYBOgE4ATkBOQE7AToBPgE8AT0BPQE/AT4BQgFAAUEBQQFDAUIBRgFEAUUBRQFHAUYBSgFIAUkBSQFLAUoBTgFMAU0BTQFPAU4BUgFQAVEBUQFTAVIBVgFUAVUBVQFXAVYBWgFYAVkBWQFbAVoBXgFcAV0BXQFfAV4BYgFgAWEBYQFjAWIBZgFkAWUBZQFnAWYBagFoAWkBaQFrAWoBbgFsAW0BbQFvAW4BcgFwAXEBcQFzAXIBdgF0AXUBdQF3AXYBegF4AXkBeQF7AXoBfgF8AX0BfQF/AX4BggGAAYEBgQGDAYIBhgGEAYUBhQGHAYYBigGIAYkBiQGLAYoBjgGMAY0BjQGPAY4BkgGQAZEBkQGTAZIBlgGUAZUBlQGXAZYBmgGYAZkBmQGbAZoBngGcAZ0BnQGfAZ4BogGgAaEBoQGjAaIBpgGkAaUBpQGnAaYBqgGoAakBqQGrAaoBrgGsAa0BrQGvAa4B"),
 "lods": [0.035676, PackedByteArray("RAAJAAQAAgAEAAkARAAEAC0ABAACADMAMwAtAAQAOQAzAAIALQAzADUAMwA5ADUANQBAAC0AOAAtAEAALQA4AEQAEgJAADUAOABAABICHQE1ADkANQAdARICRAA4AOYAEgLmADgA5gB/AEQARAB/AA4CDgIJAEQAfwDmAE8AGQHmABICGQFPAOYATwBNAH8ADgJ/AE0ATwAZARMBEgIYARkBEwEZARgBEgJLABgBSwASAh0BOgEYAUsAGAE6ARMBHQFKAEsASwBJADoBSQBLAEoA7AA6AUkAOgHsABMBSgBIAEkA7ABJAEgAHQEhAUoASABKACEBIQEdARcBIQERAkgAEQIhARcB7ABIACcASAARAicAJwAYAOwAOQAXAR0BJQAnABEC7AAYACAAIAATAewAGAAnACYAJgAnACUAJgAZABgAIAAYABkAJgAlAA8AEQLPACUADwAlAM8ABgHPABECFwEGARECBgFXAM8AVwAGARcBhwDPAFcAzwCHAA8ADwARACYAGQAmABEADwCHAA8CEQAhABkAEQAPABcAIQARABcADwIXAA8AIAAZACEAFwArACEAIQAjACAAIwAhACsAEAIrABcAIwArABACIAAjAC0BEAItASMALQH5ACAA+QATASAAFwBZABACFwAPAlkAEwH5AE4AEwFOAE8ATQBPAE4ATABOAPkATgBMAE0A+QAtAUwATADEAE0ALQHEAEwAxAAtARACDgJNAMQAEAJYAMQAxABYAA4CWAAQAlkAWABaAA4CWgBYAFkAWgBhAA4CCQAOAmEAWQBbAFoAYQBaAFsAWwBZAA8CCQBhAA0CWwANAmEADQIAAAkACQAAAAIADQJbAAwCDAJbAA8CAgAAAAcABwAAAA0CAgAHADkADQJnAAcAOQAHAGcADAJnAA0CZwDCADkAwgAXATkAZwAMAlQAwgBnAFQAFwHCAFYAVABWAMIAFwFWAFcAVAAMAlUAVgBUAFUAVQBXAFYADwJVAAwCVwBVAIcADwKHAFUA"), 0.0477776, PackedByteArray("SgBIAEkABwJJAEgASQAHAggCBwJIAPwBSwBJAAgCSQBLAEoA+gEIAgcC/AH6AQcCSAAPAfwBSgAPAUgA+gH8AfgBDwEAAvwB+AH8AQACCQIAAg8BDwFKAAkCCQJWAAAC/QEJAkoAVgAJAv0B/wEAAlYAAAL/AfkBVgBUAP8BBQL/AVQA+AH/AQUCVgADAlQAAwJWAP0BVAACAgUCVAADAgIC+AEFAlkAAgJZAAUCAwICAAICAgADAv0BAgICAPYB9gECAP0BWQACAloA9gFaAAIC+AFZAAECWgABAlkA/QEtAPYBAQIhAPgB+AEhAPoBIQALAvoBCwIhAAECCwJOAPoB9gEEAloAAQJaAAQCTAALAgECTAABAgQCTgALAkwABAJNAEwATgBMAE0A9wFNAAQCBgJNAPYBLQAGAvYBTQBPAE4ATQAGAk8ACAJOAE8ATgAIAvsBCAJPAEsATwAGAgoCBgItAAoCCgJLAP4BCgItAP0BSwAKAkoA/QFKAAoC"), 0.164032, PackedByteArray("SgBIAOYB5gFIAOIBSABKAO4B4gEZAOYBGQDiAd8B3wHvARkA7wHqARkA5gHoAUoA5gH1AegB5AFKAOgB6AH0AeMB4wHuAUoA4wH0Ad4B3gHzAeMB8wHsAeMB7AHuAeMB7gHsAfAB8AHhAe4B7gHhAeUB4QHwAd8B3wHxAVgA8gFYAPEB6QFYAPIB8QFbAPIB7QFbAPEB3gHyAVsA3gHrAfIB5gBNAN4B8gFNAEwATQDmAOcB5wFMAE0ATADnAeAB"), 0.461938, PackedByteArray("vwHCAUkAvAHEAckBygHGAcABygFYAMYBwQG9AcsBxwFXAFYAvgHDAcgByAHFAb4B"), 0.461938, PackedByteArray("uQG2AbMBtAGwAboBsQG1AbcBuAG7AbIB")],
-"material": SubResource("StandardMaterial3D_v42nd"),
+"material": SubResource("StandardMaterial3D_8nofx"),
 "name": "colormap",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -44,91 +39,19 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_kckt4")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ubai4"]
-albedo_color = Color(0.372549, 1, 0.341176, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_46w3q"]
-
-[sub_resource type="Animation" id="Animation_62hpb"]
-resource_name = "Opacity"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("cube2:transparency")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.5, 1.0]
-}
-
-[sub_resource type="Animation" id="Animation_44fiv"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("cube2:transparency")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [1.0]
-}
-
-[sub_resource type="Animation" id="Animation_pubsj"]
-resource_name = "Transparent"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("cube2:transparency")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [1.0, 0.5]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_737q8"]
-_data = {
-"Opacity": SubResource("Animation_62hpb"),
-"RESET": SubResource("Animation_44fiv"),
-"Transparent": SubResource("Animation_pubsj")
-}
-
-[node name="Wall" type="Node3D"]
-script = ExtResource("1_rqyyi")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
-transform = Transform3D(1.98, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-shape = SubResource("BoxShape3D_dwiet")
+[node name="Node3D" type="Node3D"]
 
 [node name="cube2" type="MeshInstance3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, -0.5, 0)
-transparency = 1.0
-cast_shadow = 0
-mesh = SubResource("ArrayMesh_2odqq")
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0.25, 0)
+mesh = SubResource("ArrayMesh_4l3vt")
 skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_ubai4")
 
-[node name="Area3D" type="Area3D" parent="cube2"]
-transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 1.7, 0, 0, 0)
+[node name="cube3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.3, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("ArrayMesh_4l3vt")
+skeleton = NodePath("")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="cube2/Area3D"]
-transform = Transform3D(2.5, 0, 0, 0, 4, 0, 0, 0, 2.5, 0, 1.5, 0)
-shape = SubResource("BoxShape3D_46w3q")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_737q8")
-}
-
-[connection signal="body_entered" from="cube2/Area3D" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="cube2/Area3D" to="." method="_on_area_3d_body_exited"]
+[node name="cube4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.3, 0, 0, 0, 0.5, 0, 1.25, 0)
+mesh = SubResource("ArrayMesh_4l3vt")
+skeleton = NodePath("")
