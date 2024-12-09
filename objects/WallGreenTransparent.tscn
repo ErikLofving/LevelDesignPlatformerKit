@@ -49,21 +49,6 @@ albedo_color = Color(0.372549, 1, 0.341176, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_46w3q"]
 
-[sub_resource type="Animation" id="Animation_pubsj"]
-resource_name = "Transparent"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("cube2:transparency")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [1.0, 0.5]
-}
-
 [sub_resource type="Animation" id="Animation_62hpb"]
 resource_name = "Opacity"
 tracks/0/type = "value"
@@ -94,6 +79,21 @@ tracks/0/keys = {
 "values": [0.0]
 }
 
+[sub_resource type="Animation" id="Animation_pubsj"]
+resource_name = "Transparent"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cube2:transparency")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.5]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_737q8"]
 _data = {
 "Opacity": SubResource("Animation_62hpb"),
@@ -112,6 +112,7 @@ shape = SubResource("BoxShape3D_dwiet")
 
 [node name="cube2" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, -0.5, 0)
+cast_shadow = 0
 mesh = SubResource("ArrayMesh_2odqq")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ubai4")
