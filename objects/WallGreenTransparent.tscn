@@ -46,6 +46,8 @@ shadow_mesh = SubResource("ArrayMesh_kckt4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ubai4"]
 albedo_color = Color(0.372549, 1, 0.341176, 1)
+emission = Color(0.372549, 1, 0.341176, 1)
+emission_energy_multiplier = 3.75
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_46w3q"]
 

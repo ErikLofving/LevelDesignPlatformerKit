@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://c8prumissi0sg"]
 
 [ext_resource type="Texture2D" uid="uid://0odt7cvj574e" path="res://models/core_models/Textures/colormap.png" id="1_iwq6k"]
-[ext_resource type="Material" path="res://Materials/WallGreyNormal.tres" id="2_gvlha"]
+[ext_resource type="Material" uid="uid://gkkfi6vin3xq" path="res://Materials/WallGreyNormal.tres" id="2_gvlha"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7kll8"]
 
