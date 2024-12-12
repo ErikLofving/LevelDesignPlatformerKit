@@ -11,21 +11,6 @@ resource_name = "MovingPlatformMaterial"
 [sub_resource type="BoxShape3D" id="BoxShape3D_cypsh"]
 size = Vector3(2, 0.5, 2)
 
-[sub_resource type="Animation" id="Animation_eb0hw"]
-resource_name = "Transparent"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("platform-falling2:transparency")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [1.0, 0.5]
-}
-
 [sub_resource type="Animation" id="Animation_77fei"]
 resource_name = "Opacity"
 tracks/0/type = "value"
@@ -53,7 +38,22 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_eb0hw"]
+resource_name = "Transparent"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("platform-falling2:transparency")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.5]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xb1qn"]
@@ -67,7 +67,6 @@ _data = {
 script = ExtResource("2_lujb2")
 
 [node name="platform-falling2" parent="." index="0"]
-transparency = 1.0
 cast_shadow = 0
 
 [node name="Area3D" type="Area3D" parent="platform-falling2" index="0"]
