@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://tyqvteqwlrqg"]
+
+[ext_resource type="PackedScene" uid="uid://bsrmqj84lksd7" path="res://models/core_models/cloud.glb" id="1_k27fi"]
+[ext_resource type="Script" path="res://objects/cloud.gd" id="2_caegr"]
+
+[node name="cube" instance=ExtResource("1_k27fi")]
+script = ExtResource("2_caegr")

@@ -142,7 +142,8 @@ mesh = SubResource("ArrayMesh_712ub")
 skeleton = NodePath("")
 surface_material_override/0 = ExtResource("2_bn5m4")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="StaticBody3D" type="AnimatableBody3D" parent="."]
+sync_to_physics = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(2.3, 0, 0, 0, 1.4, 0, 0, 0, 2.3, 0, -0.25, 0)

@@ -242,16 +242,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5, 8, -61.5)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5, 10.5, -52.5)
 
 [node name="platform75" parent="World" instance=ExtResource("9_eg88d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 10.5, -56)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 10.5, -56.5)
 
 [node name="platform76" parent="World" instance=ExtResource("9_eg88d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 10.5, -56)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 10.5, -56.5)
 
 [node name="platform77" parent="World" instance=ExtResource("9_eg88d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 10.5, -56)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 10.5, -56.5)
 
 [node name="platform78" parent="World" instance=ExtResource("9_eg88d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 10.5, -56)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 10.5, -56.5)
 
 [node name="platform21" parent="World" instance=ExtResource("9_eg88d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 3, -42)
@@ -264,9 +264,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5, 3, -44)
 
 [node name="platform37" parent="World" instance=ExtResource("9_eg88d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 2, -49.5)
-
-[node name="platform14" parent="World" instance=ExtResource("9_eg88d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0)
 
 [node name="HUD" type="CanvasLayer" parent="World" groups=["HUD"]]
 process_mode = 3
@@ -412,7 +409,7 @@ transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -29.5, 8, -58)
 transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -18.5, 10.5, -58)
 
 [node name="platform7" parent="." instance=ExtResource("18_0vsfq")]
-transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 1, 10.5, -56.5)
+transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0.5, 10.5, -56.5)
 
 [node name="platform9" parent="." instance=ExtResource("18_0vsfq")]
 transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 13.5, 10.5, -56.5)

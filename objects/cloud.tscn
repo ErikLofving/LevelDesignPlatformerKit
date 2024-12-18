@@ -1,7 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://dy017k58p20sk"]
+[gd_scene load_steps=5 format=3 uid="uid://dy017k58p20sk"]
 
 [ext_resource type="PackedScene" uid="uid://bsrmqj84lksd7" path="res://models/core_models/cloud.glb" id="1_pjiy0"]
 [ext_resource type="Script" path="res://objects/cloud.gd" id="2_hugjq"]
+[ext_resource type="Shader" path="res://scenes/Water.gdshader" id="3_claot"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fb386"]
+render_priority = 0
+shader = ExtResource("3_claot")
+shader_parameter/primary_color = Color(0.211765, 0, 0.262745, 1)
+shader_parameter/rougness = 0.2
+shader_parameter/normalmap_a_strenght = 0.3
+shader_parameter/normalmap_b_strenght = 0.4
+shader_parameter/movement_direction = Vector2(0.1, 0.1)
+shader_parameter/movement_strenght = 0.5
+shader_parameter/uv_scale = 1.0
 
 [node name="cube" instance=ExtResource("1_pjiy0")]
 script = ExtResource("2_hugjq")
+
+[node name="cube2" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_fb386")
